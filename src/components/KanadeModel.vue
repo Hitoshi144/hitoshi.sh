@@ -114,7 +114,8 @@ onMounted(async () => {
     resolution: window.devicePixelRatio,
     backgroundAlpha: 0,
   })
-  model.value = await Live2DModel.from('/17kanade_unit_3.0_t08/17kanade_unit_3.0_t08.model3.json')
+  console.log(import.meta.env.BASE_URL)
+  model.value = await Live2DModel.from(`${import.meta.env.BASE_URL}17kanade_unit_3.0_t08/17kanade_unit_3.0_t08.model3.json`)
   app.value.stage.addChild(model.value)
   model.value.position.set(app.value.renderer.width / 2, app.value.renderer.height / 2)
   model.value.anchor.set(0.5, 0.5)

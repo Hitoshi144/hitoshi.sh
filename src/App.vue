@@ -159,6 +159,7 @@
 }
 
 .please-pc {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: black;
@@ -168,11 +169,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 }
 
 .please-text {
   color: #F8F8FF;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 </style>
 

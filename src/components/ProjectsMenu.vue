@@ -20,7 +20,7 @@
         <div style="display: flex; flex-direction: row; align-self: flex-start; gap: 30px; align-items: center;">
           <Button variant="outlined" severity="contrast" icon="pi pi-chevron-left" :style="isLightTheme ? 'color: black;' : 'color: white;'" style="width: 40px; height: 40px; border-radius: 20%;" @click="currentProject = null" />
           <span class="current-project-title">{{ currentProject.title }}</span>
-          <img class="lang-logo" :src="'/src/assets/' + currentProject.lang + '.png'" />
+          <img class="lang-logo" :src="`${import.meta.env.BASE_URL}/src/assets/` + currentProject.lang + '.png'" />
         </div>
         <span class="current-project-description">{{ $t(currentProject.description) }}</span>
       </div>
@@ -376,7 +376,7 @@ const projects = [
     {
         title: 'ITrialto',
         description: 'itrialto-description',
-        image: 'src/assets/itrialto_logo.png',
+        image: `${import.meta.env.BASE_URL}src/assets/itrialto_logo.png`,
         video: 'itrialto-link',
         lang: 'TypeScript',
         stack: ['Vue JS', 'Nest JS', 'TypeORM', 'postgreSQL', 'Pinia', 'Axios'],
@@ -385,7 +385,7 @@ const projects = [
     {
         title: 'My rating URFU',
         description: 'urfu_ddos-description',
-        image: 'src/assets/my_rating_urfu_logo.png',
+        image: `${import.meta.env.BASE_URL}src/assets/my_rating_urfu_logo.png`,
         video: 'urfu_ddos-link',
         lang: 'Python',
         stack: ['aiogram', 'SQLAlchemy', 'asyncio', 'aiohttp'],
@@ -394,16 +394,16 @@ const projects = [
     {
       title: 'hitoshi.sh',
       description: 'hitoshi.sh-description',
-      image: 'src/assets/hitoshi.sh_logo.png',
+      image: `${import.meta.env.BASE_URL}src/assets/hitoshi.sh_logo.png`,
       video: 'https://www.youtube.com/embed/CkKCY_pCPi8?si=Z8yLmtA6831bRlma',
       lang: 'JavaScript',
       stack: ['Vue JS', 'Pinia', 'Anime JS', 'Live2D', 'PrimeVue'],
-      github: 'None'
+      github: 'https://github.com/Hitoshi144/hitoshi.sh'
     },
 ]
 
 function getLogo(name) {
-  const validName = 'src/assets/' + name.split(' ').join('').toLowerCase() + '_logo.png'
+  const validName = `${import.meta.env.BASE_URL}src/assets/` + name.split(' ').join('').toLowerCase() + '_logo.png'
   return validName
 }
 

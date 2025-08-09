@@ -1,7 +1,7 @@
 <template>
     <Transition name="fade" mode="out-in">
     <div class="certificate-viewer" v-if="choosenCertificate" @click="choosenCertificate = null">
-        <img :src="choosenCertificate" class="big-certificate" />
+        <img :src="`${import.meta.env.BASE_URL}` + choosenCertificate" class="big-certificate" />
     </div>
     </Transition>
 
@@ -10,7 +10,7 @@
             <span class="final-text">{{ $t('final-message') }}</span>
 
             <div class="certificates">
-                <img v-for="n in 3" :src="$t(`stepik-certificate-${n}`)" class="certificate" @click="choosenCertificate = $t(`stepik-certificate-${n}`)" 
+                <img v-for="n in 3" :src="`${import.meta.env.BASE_URL}` + $t(`stepik-certificate-${n}`)" class="certificate" @click="choosenCertificate = $t(`stepik-certificate-${n}`)" 
                 :style="{opacity: choosenCertificate === $t(`stepik-certificate-${n}`) ? '0' : '1'}"
                 />
             </div>

@@ -38,8 +38,8 @@
     "urfu_ddos-description": "Telegram bot created to help my friend. The purpose of the bot is to collect information about all applicants, filter and sort it, and at the end - display the current place in the competition lists. More detailed information about the bot's work is on GitHub :)",
     "urfu_ddos-link": "https://www.youtube.com/embed/fwm7STLAsew",
     "hitoshi.sh-description": "You are already in this project (⌒_⌒;). In it I emphasized on the beauty of the design, but the 2D model is the most interesting part of it. Originally this project was supposed to be written in React, but I didn't manage to connect Live2D there so that I could have full control over the model. Yes, I had to mess around in Vue JS too: I got it when I found some two minute video in CHINA (`ー´), but I ate a couple of ‘bowl of rice’ and it worked out. There was no point in making a video on this project, so I suggest you listen to a beautiful euphonium solo. The composition is called ‘Sound, euphonium!’ from the anime of the same name. Enjoy listening :)",
-    "stepik-certificate-1": "/src/assets/stepik-certificate-1_en.png",
-    "stepik-certificate-2": "/src/assets/stepik-certificate-2_en.png",
-    "stepik-certificate-3": "/src/assets/stepik-certificate-3_en.png",
+    "stepik-certificate-1": "src/assets/stepik-certificate-1_en.png",
+    "stepik-certificate-2": "src/assets/stepik-certificate-2_en.png",
+    "stepik-certificate-3": "src/assets/stepik-certificate-3_en.png",
     "final-message": "Thank you for taking the time to visit my website ( ´ ▽ ` ) I hope it gave you an idea of who I am. Contact details are on the right, and some of my achievements are listed below."
 }

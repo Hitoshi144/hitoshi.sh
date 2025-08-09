@@ -20,7 +20,7 @@
         <div style="display: flex; flex-direction: row; align-self: flex-start; gap: 30px; align-items: center;">
           <Button variant="outlined" severity="contrast" icon="pi pi-chevron-left" :style="isLightTheme ? 'color: black;' : 'color: white;'" style="width: 40px; height: 40px; border-radius: 20%;" @click="currentProject = null" />
           <span class="current-project-title">{{ currentProject.title }}</span>
-          <img class="lang-logo" :src="`${import.meta.env.BASE_URL}/src/assets/` + currentProject.lang + '.png'" />
+          <img class="lang-logo" :src="`${baseURL}/src/assets/` + currentProject.lang + '.png'" />
         </div>
         <span class="current-project-description">{{ $t(currentProject.description) }}</span>
       </div>
@@ -320,6 +320,8 @@ import { computed, nextTick, ref, toRef, watch } from 'vue'
 import { image } from '@primeuix/themes/aura/chip'
 import { animate, text, stagger } from 'animejs'
 import { Button } from 'primevue'
+
+const baseURL = import.meta.env.BASE_URL
 
 const themeStore = useThemeStore()
 

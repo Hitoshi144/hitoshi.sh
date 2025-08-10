@@ -50,6 +50,7 @@
     justify-content: space-between;
     height: 100%;
     z-index: 9999;
+    overflow: hidden;
 
     i {
         font-size: 3rem;

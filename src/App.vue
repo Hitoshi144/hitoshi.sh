@@ -19,7 +19,6 @@
       >
         <KanadeModel ref="kanadeModel" :current-section="currentSection" :current-phrase="phrase" />
       </div>
-      <div>{{ currentSection }}</div>
     </div>
   </div>
 

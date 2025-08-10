@@ -48,7 +48,7 @@
   <ProjectsMenu :currentSection="currentSection" />
   </section>
 
-  <section class="section"
+  <section class="section" style="overflow: hidden;"
   data-section="4"
   >
   <finalSection :currentSection="currentSection" />
